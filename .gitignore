@@ -1,0 +1,10 @@
+Makefile.local
+*-stamp
+*.*##
+.*.sw?
+.sw?
+*.elf
+*.hex
+eagle/*-bom.txt
+eagle/*.erc
+eagle/*.pro
