@@ -12,7 +12,9 @@ static int serial_putc(char c, FILE *stream) {
 static int serial_getc(FILE *stream) {
     (void)stream;
     loop_until_bit_is_set(UCSR0A, RXC0); /* Wait until data exists. */
-    return UDR0;
+    int r = UDR0;
+    serial_putc(r, NULL);
+    return r;
 }
 
 __attribute__((constructor))
