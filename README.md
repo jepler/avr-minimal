@@ -18,3 +18,9 @@ The Makefile does not have dependency tracking, so put all code in `main.cc`
 directly.
 
 License: GNU Permissive License
+
+# Development status
+
+The author (@jepler) is not actively using or developing this project.
+Issues and pull requests are not likely to be acted on.
+I would be interested in passing this project to a new maintainer.
